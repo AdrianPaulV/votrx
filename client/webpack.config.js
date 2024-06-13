@@ -33,4 +33,10 @@ module.exports = {
       template: './public/index.html',
     }),
   ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),  // Use static instead of contentBase
+    compress: true,
+    port: 3000,
+    historyApiFallback: true,  // This is the key line to handle client-side routing
+  },
 };
