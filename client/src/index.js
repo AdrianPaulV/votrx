@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import 'normalize.css';
+import './index.css';
 import HomePage from './pages/HomePage';
 import UserHome from './pages/UserHome';
 

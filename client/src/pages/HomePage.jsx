@@ -1,8 +1,9 @@
 import React from 'react';
+import Header from '../components/Header/Header.jsx';
 
 const HomePage = () => (
   <div>
-    <h1>This is the homepage</h1>
+    <Header />
   </div>
 );
 
