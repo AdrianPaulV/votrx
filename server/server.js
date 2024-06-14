@@ -28,7 +28,10 @@ app.use(express.json());
 
 /**
  * configure express global error handler
+ * 
  */
+
+
 app.use((err, req, res, next) => {
   
   const defaultErr = {

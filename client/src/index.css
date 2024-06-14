@@ -1,7 +1,274 @@
 :root {
   --primary: #0d63d9;
   --secondary: #91ADE8;
-  --headers: #030303;
-  --bg-color: #F9F9F9
+  --black: #030303;
+  --gray: #6c6c6c;
+  --white: #F9F9F9;
+  --primary-bg: #ecf0f9;
+  --secondary-bg: #F9F9F9;
+  --tertiary-bg: #e1e5ed;
+  --box-shadow: -4px 5px 2px -2px rgba(0,0,0,0.1);
+}
 
+body {
+  background-color: var(--secondary-bg);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+ul.no-bullets {
+  list-style-type: none;
+}
+
+ul li {
+  display: flex;
+  margin: 10px 0;
+}
+
+/* ICONS */
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.black { color: var(--black)}
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+
+/* FONTS */
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* HEADERS */
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+
+.txt-xs {
+ font-size: 12px;
+}
+
+.txt-sm {
+ font-size: 14px;
+}
+
+.txt-m {
+  font-size: 16px;
+}
+
+.txt-lg {
+  font-size: 18px;
+}
+
+.txt-xl {
+  font-size: 24px;
+}
+
+/* BUTTONS */
+
+.btn {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  justify-content: center;
+  padding: 6px 30px;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.btn-1 {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	color: #ffffff;
+}
+
+.btn-1:hover {
+	box-shadow: 3px -3px 0px 0px var(--secondary);
+  transform: translate(-3px, 3px);
+}
+
+.btn-2 {
+	background-color: var(--white);
+	border: 1px solid var(--primary);
+  color: var(--black);
+}
+
+.btn-2:hover {
+	box-shadow: 3px -3px 0px 0px var(--primary);
+  transform: translate(-3px, 3px);
+}
+
+.btn-3 {
+	background-color: var(--primary-bg);
+	border: 1px solid var(--primary);
+	color: #ffffff;
+}
+
+/* FORMS */
+
+.input-margin {
+  margin-bottom: 20px;
+}
+
+.input::placeholder {
+  color: var(--gray);
+  opacity: 1;
+}
+
+.txt-area-input, .txt-input {
+  background-color: var(--primary-bg);
+  border: none;
+  border-bottom: 1px solid var(--black);
+  flex-grow: 1;
+  position: relative;
+  outline: none;
+  resize: vertical;
+}
+
+.txt-area-input:focus, .txt-input:focus {
+  border-color: var(--primary);
+  background: rgb(13,99,217);
+  background: linear-gradient(0deg, rgba(13,99,217,1) 0px, rgba(107,158,230,1) 1px, rgba(236,240,249,1) 3px);
+}
+
+.select-input {
+  color: var(--black);
+  background-color: var(--primary-bg);
+  border: none;
+  border-bottom: 1px;
+}
+
+.radio-btn {
+  color: var(--black);
+  transform: scale(1.4);
+  height: 15px;
+  margin: 2px 15px 0 0;
 }

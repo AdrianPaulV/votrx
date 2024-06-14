@@ -1,0 +1,24 @@
+.userhome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.form-container {
+  align-items: center;
+  background-color: var(--primary-bg);
+  border-radius: 3px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  padding: 30px 50px 30px;
+  width: 600px;
+}
+
+form {
+  margin: 10px 0;
+}

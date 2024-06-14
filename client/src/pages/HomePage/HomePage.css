@@ -1,0 +1,18 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.login {
+  margin-right: 15px;
+}
+
+.btns-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}

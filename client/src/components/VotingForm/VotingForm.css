@@ -1,0 +1,41 @@
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+}
+
+form label {
+  display: block;
+}
+
+.input-container {
+  display: flex;
+}
+
+.add-option-btn {
+  margin-left: 15px;
+}
+
+.select-input {
+  outline: none;
+  margin-left: 15px;
+}
+
+.option-txt-input {
+  margin: 40px 0 20px;
+}
+
+.input-type-dropdown {
+  align-items: center;
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.qr-code-icon {
+  margin-right: 10px;
+}
+
+button, [type='submit'] {
+  align-self: center;
+}
